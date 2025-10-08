@@ -8,18 +8,18 @@ Inspired by https://github.com/repnz/shellcode2exe with some improvements:
 - does not rely on relative paths &mdash; you can add it to your `PATH` and run from anywhere,
 - does not clutter the working directory with temporary files.
 
-It is up to you to run either the Python script (`shellcode2exe.py`) or the compiled binary (`shellcode2exe.exe`).
+<!-- It is up to you to run either the Python script (`shellcode2exe.py`) or the compiled binary (`shellcode2exe.exe`).
 
 - The Python script has no dependencies and has been tested on Python 3.10.
-- The executable was compiled from the script using PyInstaller.
+- The executable was compiled from the script using PyInstaller. -->
 
-The only requirement is to keep the `deps` directory in the same place as the Python script or compiled binary.
+The only requirement is to keep the `deps` directory in the same place as the Python script<!-- or compiled binary-->.
 
 ## Usage
 
 ```
-PS C:\Users\luke\Tools\Shellcode2Exe> .\shellcode2exe.exe -h
-usage: shellcode2exe.exe [-h] -s SOURCE -d DESTINATION -a {32,64}
+PS C:\Users\luke\Tools\Shellcode2Exe> py shellcode2exe.py -h
+usage: shellcode2exe.py [-h] -s SOURCE -d DESTINATION -a {32,64}
 
 Build a minimal Windows PE file from a shellcode blob.
 
